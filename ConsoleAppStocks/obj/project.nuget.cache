@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lix4BlZeVNYV2h4oDALihtpk21MsS1CT5FdVkpGevccKpRhCV5oT05xDA19BJQ7WtmQLPPxLpWnQTKA/g0gtlA==",
+  "dgSpecHash": "YtJ0jDUnJUuAFVi90+2bPDipWxe1v76kH3OqL6+cVN/nrgbBXLsIBK/b6xcq2JiYorlnHdw6wxw7kO3lImhSTg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\walter.bueso\\Source\\Repos\\InflationAnalysis\\ConsoleAppStocks\\ConsoleAppStocks.csproj",
+  "projectFilePath": "C:\\Users\\walter.bueso\\Desktop\\stockapp\\ConsoleAppStocks\\ConsoleAppStocks.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\walter.bueso\\.nuget\\packages\\htmlagilitypack\\1.11.43\\htmlagilitypack.1.11.43.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",

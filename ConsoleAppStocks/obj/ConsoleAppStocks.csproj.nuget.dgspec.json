@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\walter.bueso\\Source\\Repos\\InflationAnalysis\\ConsoleAppStocks\\ConsoleAppStocks.csproj": {}
+    "C:\\Users\\walter.bueso\\Desktop\\stockapp\\ConsoleAppStocks\\ConsoleAppStocks.csproj": {}
   },
   "projects": {
-    "C:\\Users\\walter.bueso\\Source\\Repos\\InflationAnalysis\\ConsoleAppStocks\\ConsoleAppStocks.csproj": {
+    "C:\\Users\\walter.bueso\\Desktop\\stockapp\\ConsoleAppStocks\\ConsoleAppStocks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\walter.bueso\\Source\\Repos\\InflationAnalysis\\ConsoleAppStocks\\ConsoleAppStocks.csproj",
+        "projectUniqueName": "C:\\Users\\walter.bueso\\Desktop\\stockapp\\ConsoleAppStocks\\ConsoleAppStocks.csproj",
         "projectName": "ConsoleAppStocks",
-        "projectPath": "C:\\Users\\walter.bueso\\Source\\Repos\\InflationAnalysis\\ConsoleAppStocks\\ConsoleAppStocks.csproj",
+        "projectPath": "C:\\Users\\walter.bueso\\Desktop\\stockapp\\ConsoleAppStocks\\ConsoleAppStocks.csproj",
         "packagesPath": "C:\\Users\\walter.bueso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\walter.bueso\\Source\\Repos\\InflationAnalysis\\ConsoleAppStocks\\obj\\",
+        "outputPath": "C:\\Users\\walter.bueso\\Desktop\\stockapp\\ConsoleAppStocks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
