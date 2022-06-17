@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FZrx0ayTr3X76ZDdhStZfGIRM5aOsqb9AqCw1lPcgANnXU/kqbtzYGAn6Axld1UZ9FNEkFCZ2l1l8iYR3R5YTA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\walter.bueso\\Desktop\\stockapp\\StockWebApp\\StockWebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\walter.bueso\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
