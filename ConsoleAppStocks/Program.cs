@@ -20,7 +20,6 @@ namespace ConsoleAppStocks
         {
             var URL = "https://api.nasdaq.com/api/screener/stocks?tableonly=true&limit=25&exchange=NASDAQ&country=united_states|usa";
             Console.WriteLine("Stock radar app");
-            Console.WriteLine("Going to try to call the api via three methods.");
             Console.WriteLine("(Y/N)Would you like to change the default URL of: " + URL);
             var response = Console.ReadKey();
             Console.WriteLine();
@@ -29,61 +28,8 @@ namespace ConsoleAppStocks
                 Console.WriteLine("Enter new URL: ");
                 URL = Console.ReadLine();
             }
-            Console.WriteLine("First Method HttpClient.");
-            //GetStocksViaHttpClient(URL);
+            Console.WriteLine("Trying to get stock data via restsharp.");
             GetStocksViaRestsharp(URL);
-            //Console.WriteLine("Second method, Headless chrome.");
-            //GetStocksViaHeadless(URL);
-            //Console.WriteLine("Third Method, PuppeteerSharp");
-            //GetStocksViaPuppeteerAsync(URL);
-            Console.WriteLine("Press any key to finish");
-            Console.ReadKey();
-        }
-
-        private static async Task GetStocksViaPuppeteerAsync(string uRL)
-        {
-            var options = new LaunchOptions()
-            {
-                Headless = true,
-                ExecutablePath = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-                Product = Product.Chrome
-            };
-            var browser = await Puppeteer.LaunchAsync(options);
-            var page = await browser.NewPageAsync();
-            Console.WriteLine("Using puppeteer to go to: " + uRL);
-            await page.GoToAsync(uRL);
-        }
-
-        private static void GetStocksViaHeadless(string uRL)
-        {
-            var options = new ChromeOptions()
-            {
-                BinaryLocation = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
-            };
-            options.AddArguments(new List<string>() { "headless", "disable-gpu" });
-
-            var browser = new ChromeDriver(options);
-            browser.Navigate().GoToUrl(uRL);
-            Console.WriteLine("Trying to connect with selenium. Browser title: " + browser.Title);
-        }
-
-
-        private static void GetStocksViaHttpClient(string uRL)
-        {
-            var response = CallUrl(uRL).Result;
-            if (string.IsNullOrEmpty(response))
-            {
-                Console.WriteLine("Success getting response: " + response);
-                return;
-            }
-        }
-        private static async Task<string> CallUrl(string fullUrl)
-        {
-            HttpClient client = new HttpClient();
-            client.DefaultRequestHeaders.Add("User-Agent", "PostmanRuntime/7.26.8");
-            client.DefaultRequestHeaders.Add("Accept", "*/*");
-            var response = await client.GetStringAsync(fullUrl);
-            return response;
         }
         private static void GetStocksViaRestsharp(string url)
         {
