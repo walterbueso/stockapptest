@@ -11,6 +11,8 @@ using OpenQA.Selenium.Chrome;
 using System.Collections.Generic;
 using RestSharp;
 using RestSharp.Authenticators;
+using ConsoleAppStocks.Models;
+using System.Text.Json;
 
 namespace ConsoleAppStocks
 {
@@ -33,6 +35,11 @@ namespace ConsoleAppStocks
         }
         private static void GetStocksViaRestsharp(string url)
         {
+            //todo:
+            //*done* deserialize to objects
+            //error handling the request
+            //refactor code to RestSharp recommended usage https://restsharp.dev/usage.html and async method
+            //deserilize only the data i need https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter?pivots=dotnet-6-0#deserialize-subsections-of-a-json-payload
             var options = new RestClientOptions(url)
             {
                 ThrowOnAnyError = true,
@@ -47,6 +54,8 @@ namespace ConsoleAppStocks
             request.AddHeader("Accept-Encoding", "gzip, deflate, br");
             request.AddHeader("Connection", "keep-alive");
             var response = client.Get(request);
+            var responseJson = JsonSerializer.Deserialize<StockApiResponse>(response.Content);
+            Console.WriteLine("Please work");
         }
     }
 }
